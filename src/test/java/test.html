@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blockchain Voting</title>
+  </head>
+  <body>
+    <h1>Blockchain Voting</h1>
+    <div>
+      <label for="voter">Voter Public Key:</label>
+      <input type="text" id="voter" name="voter">
+    </div>
+    <div>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city">
+    </div>
+    <div>
+      <label for="event">Event ID:</label>
+      <input type="text" id="event" name="event">
+    </div>
+    <div>
+      <label for="choice">Choice:</label>
+      <input type="text" id="choice" name="choice">
+    </div>
+    <div>
+      <button onclick="vote()">Vote</button>
+    </div>
+    <div id="output"></div>
+    <script>
+      function vote() {
+        const voter = document.getElementById("voter").value;
+        const city = document.getElementById("city").value;
+        const event = document.getElementById("event").value;
+        const choice = document.getElementById("choice").value;
+
+        // TODO: call your Java program with these values and display the output in the "output" div
+      }
+    </script>
+  </body>
+</html>
